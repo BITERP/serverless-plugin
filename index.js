@@ -6,6 +6,7 @@ const YandexCloudDeploy = require('./lib/deploy/deploy');
 const YandexCloudRemove = require('./lib/remove/remove');
 const YandexCloudInvoke = require('./lib/invoke/invoke');
 const YandexCloudInfo = require('./lib/info/info');
+const YandexTestConfig = require('./lib/provider/testConfig');
 
 class YandexCloudServerlessPlugin {
     constructor(serverless, options) {
@@ -17,6 +18,7 @@ class YandexCloudServerlessPlugin {
         this.serverless.pluginManager.addPlugin(YandexCloudRemove);
         this.serverless.pluginManager.addPlugin(YandexCloudInvoke);
         this.serverless.pluginManager.addPlugin(YandexCloudInfo);
+        this.serverless.pluginManager.addPlugin(YandexTestConfig);
     }
 }
 
