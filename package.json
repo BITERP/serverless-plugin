@@ -1,6 +1,6 @@
 {
   "name": "serverless-yc-biterp",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Provider plugin for the Serverless Framework which adds support for Yandex Cloud Functions.",
   "keywords": [
     "yandex-cloud",
